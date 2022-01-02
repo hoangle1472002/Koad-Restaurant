@@ -89,6 +89,10 @@
     grid-column-gap: 30px;
     margin: 0 auto;
 }
+.chef__item{
+    background-color: white;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
 .chef__item img{
     width:100%;
     margin-bottom: 25px;
