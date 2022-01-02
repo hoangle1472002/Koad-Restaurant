@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Zilla Slab', serif;
+    scroll-behavior: smooth;
+}
+/* ICON COLOR */
+.twitter{
+    color : #5ab4d6;
+}
+.facebook{
+    color : #5252d4;
+}
+.instagram{
+    color: #d74040eb;
+}
+
+
+
+
+.color--white{
+    color: var(--white--color);
+}
+.color--main{
+    color: var(--main--color);
+}
+.box--shadow{
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.border--bottom{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.border--top--brown{
+    border-top: 1px solid #ffffff28;
+}
+.text--main{
+    color:var(--main--color);
+    font-size:18px;
+    font-weight:600;
+}
+:root{
+    --title--color : #23292c;
+    --text--color :#777777;
+    --main--color : #ea462b;
+    --white--color : white;
+    --black--color : black;
+    --width--main : 1200px;
+
+    --s--size : 16px;
+    --m--size : 18px;
+    --l--size : 22px;
+    --xl--size : 50px;
+
+}
+.btn--white a{    
+    display: block ;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 35px;
+    font-weight: 600;
+    color: var(--title--color);
+    border: 1px solid var(--main--color);
+    transition: all 0.2s;
+}
+.btn--white:hover a{
+    background-color: var(--main--color);
+    color: white;
+}
+.btn--main a{
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 35px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--main--color);
+    transition: all 0.2s;
+}
+.btn--main a:hover {
+    background-color:white ;
+    border: 1px solid var(--main--color);
+    color: var(--main--color);
+}
+
+.dot--list{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.dot{
+    width:12px;
+    height:12px;
+    margin : 40px 5px 0;
+    border-radius:50%;
+    text-align: center;
+    border : 1px solid var(--text--color);
+    transition : 0.2s;
+}
+.dot:hover{
+    background-color:var(--main--color);
+    cursor: pointer;
+    border:none;
+}
+
+.active{
+    background-color:var(--main--color);
+    border:none;
+}
+
+@keyframes upDown{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform:translateY(-722px);
+    }
+}

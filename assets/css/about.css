@@ -1,0 +1,129 @@
+.about__history{
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    align-items: center;
+    margin: 70px 0 70px;
+}
+.about__history > img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.about__history--content{
+}
+.about__history--content h4,.chef__info h4{
+    font-size: var(--xl--size);
+    color:var(--title--color);
+    font-weight:600;
+}
+.about__history--content span,.about__history--content p,.chef__info p,.chef__info span{
+    color:var(--text--color);
+}
+.about__history--content span{
+    font-size:var(--m--size);
+    margin : 5px 0;
+}
+.about__history--content p{
+    font-size:var(--m--size);
+    margin-top:20px;
+    line-height:26px;
+}
+.about__history--chef{
+    display:flex;
+    margin-top: 35px;
+}
+.about__history--chef--ava{
+    width:70px;
+    height:70px;
+    margin-right: 20px;
+}
+.about__history--chef--sign{
+    width:200px;
+    height: 80px;
+}
+
+.about__quantity{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(25%,1fr));
+}
+.quatity__item{
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--xl--size); 
+    margin-bottom: 30px;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+.quatity__item--number{
+    font-size:var(--xl--size);
+    color:var(--title--color);
+    font-weight:600;
+}
+.quatity__item--dcr{
+    font-size:var(--m--size);
+    color:var(--text--color);
+}
+
+.about__chef{
+
+}
+.chef__info{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.content__chef{
+    background-image: url('../img/main/cmt--bgr.jpg');
+    background-size: cover;
+    width : 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 70px 0;
+}
+.chef__list{
+    display : grid;
+    width:var(--width--main);
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    grid-column-gap: 30px;
+    margin: 0 auto;
+}
+.chef__item img{
+    width:100%;
+    margin-bottom: 25px;
+}
+.chef__item--name,.chef__info--icon{
+    text-align: center;
+}
+.chef__item--name{
+}
+.chef__item--name h4{
+    color: var(--title--color);
+    font-size: var(--l--size);
+    line-height:30px;
+    font-weight: 600;
+}
+.chef__item--name > span{
+    font-size:var(--m--size);
+    color: var(--text--color);
+}
+.chef__info--icon{
+    padding : 20px 0;
+    margin: 20px 30px 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.chef__info--icon a{
+    text-decoration: none;
+}
+.chef__info--icon i{
+    color: var(--text--color);
+    font-size:var(--l--size);
+    padding:10px;
+    transition: 0.3s;
+}
+.chef__info--icon a:hover i{
+    color: var(--main--color);
+}
+.about__cmt{
+}
