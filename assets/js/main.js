@@ -2,6 +2,16 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const nav = $('.nav');
+//Nav__list--small
+const navListBtn = $('.nav__list--small--btn');
+const navOptionListSmall = $('.nav__option--small--list');
+const backBtn = $('.back--btn');
+navListBtn.onclick = function() {
+    navOptionListSmall.style.right = '100%';
+}
+backBtn.onclick = function() {
+    navOptionListSmall.style.right = '-450px';
+}
 
 //Scroll Nav
 var preScrollPos = window.pageYOffset;
@@ -25,6 +35,8 @@ const introMenuItemLength =$$('.intro__menu--item').length;
 const introMenuItemWidth = introMenuItem.offsetWidth;
 const cmtDot = $('.cmt--dot');
 const cmtItem = $('.cmt__item');
+const cmtItems = $$('.cmt__item');
+
 const cmtItemWidth = cmtItem.offsetWidth;  
 const cmtDots = $$('.cmt--dot');
 const preBtn = $('.intro__preBtn');
@@ -93,4 +105,64 @@ function handleSlideImage(direction)
     $('.menu__dot--item.active').classList.remove('active');
     menuDotItems[index].classList.add('active');
 
+}
+
+
+//Gallery image
+const galleryClose = $('.gallery__close');
+const galleryNext = $('.gallery__next');
+const galleryPre = $('.gallery__pre');
+const galleryImageCmt = $$('.down__cmt--img')
+const galleryImage = $('.gallery__img');
+const gallery = $('.gallery');
+var galleryIndex = 0;
+function galleryShow() {
+    if(galleryIndex == 0)
+        {
+            galleryPre.classList.add('hide');
+        }
+    else{
+        galleryPre.classList.remove('hide');
+        }
+    if(galleryIndex == galleryImageCmt.length -1)
+        {
+            galleryNext.classList.add('hide');
+        }
+    else{
+        galleryNext.classList.remove('hide');
+        }
+    galleryImage.src = galleryImageCmt[galleryIndex].src;
+    gallery.classList.add('gallery--show');
+}
+galleryImageCmt.forEach((item,index) => {
+    item.onclick = function () {
+        galleryIndex = index;
+        galleryShow();
+    }
+})
+
+document.addEventListener('keydown',function (e) {
+    if(e.keyCode == 27)
+    {
+       gallery.classList.remove('gallery--show');
+    }
+})
+
+galleryClose.onclick = function () {
+    gallery.classList.remove('gallery--show');
+}
+
+galleryNext.onclick = function () {
+    if(galleryIndex < galleryImageCmt.length - 1)
+    {
+        galleryIndex++;
+        galleryShow();
+    }
+}
+galleryPre.onclick = function () {
+    if(galleryIndex > 0)
+    {
+        galleryIndex--
+        galleryShow();
+    }
 }

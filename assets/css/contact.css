@@ -56,4 +56,6 @@
 }
 .contact__dcr--input > div{
     margin-bottom : 10px;
+    position: relative;
+    top: -20px;
 }

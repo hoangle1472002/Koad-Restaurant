@@ -109,6 +109,9 @@ html{
     background-color:var(--main--color);
     border:none;
 }
+.hide{
+    display:none;
+}
 
 @keyframes upDown{
     from{

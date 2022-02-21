@@ -8,7 +8,7 @@
 .reservation__input--res{
     display: grid;
     width: var(--width--main);
-    grid-template-columns: repeat(auto-fit,minmax(45%,1fr));
+    grid-template-columns: repeat(auto-fit,minnmax(45%,1fr));
     grid-gap: 30px ;
     margin-top: 50px;
 }

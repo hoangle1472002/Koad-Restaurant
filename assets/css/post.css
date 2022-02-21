@@ -45,6 +45,8 @@
 .post__qoute--img{
     object-fit: contain;
     justify-content:center;
+    position: relative;
+    top: -10px;
 }
 .post__quote > span{
     font-size :var(--l--size);

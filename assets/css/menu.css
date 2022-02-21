@@ -55,7 +55,10 @@
 }
 .reservation__menu{
     padding: 78px 0;
-    background: url('../img/main/bgr--reser--MENU.jpg') center center no-repeat;
+    background-image: url('../img/main/bgr--reser--MENU.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .reservation__banner--text{
