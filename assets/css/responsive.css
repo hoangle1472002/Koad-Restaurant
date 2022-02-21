@@ -199,6 +199,16 @@
     .contact__dcr--input > .input__content--res > input{
         margin-left:30px;
     }
+    .gallery__next{
+        right : 2%;
+    }
+    .gallery__pre{
+        left : 2%;
+    }
+    .gallery__img{
+        width: 80%;
+        height: 300px;
+    }
 }
 
 
@@ -460,7 +470,16 @@
     .contact__dcr--input > .input__content--res > input{
         width: 100%;
     }
-
+    .gallery__next{
+        right : 4%;
+    }
+    .gallery__pre{
+        left : 4%;
+    }
+    .gallery__img{
+        width: 80%;
+        height: 500px;
+    }
 
 }
 
